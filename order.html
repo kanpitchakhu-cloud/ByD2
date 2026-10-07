@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า | Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <h1>สั่งซื้อสินค้า</h1>
+        <hr class="rule">
+        <p class="muted">กรอกข้อมูลด้านล่าง เราจะติดต่อกลับเพื่อยืนยันคำสั่งซื้อ</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="orderForm" class="form-card" autocomplete="on">
+
+          <div class="field">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" required>
+          </div>
+
+          <div class="field">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" required>
+          </div>
+
+          <div class="field">
+            <label for="items">รายการสินค้า</label>
+            <textarea id="items" name="items" rows="2" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="text" id="total" name="total" inputmode="numeric" readonly>
+          </div>
+
+          <div class="field">
+            <label for="note">หมายเหตุ <span class="optional">(ไม่บังคับ)</span></label>
+            <textarea id="note" name="note" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--block">ยืนยันสั่งซื้อ</button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span class="brand">Body Scent</span>
+      <span>&copy; Body Scent</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
